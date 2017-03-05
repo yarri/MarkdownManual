@@ -1,0 +1,46 @@
+{
+  "name": "atk14-book",
+  "title": "ATK14 Book",
+  "version": "0.1.0",
+  "description": "Best book about the ATK14 Framework ever",
+  "homepage": "http://book.atk14.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yarri/Atk14Book.git"
+  },
+  "contributors": [
+    {
+      "name": "Jaromír Tomek",
+      "email": "jaromir.tomek@gmail.com"
+    },
+    {
+      "name": "Bohdan Ganický",
+      "email": "bohdan.ganicky@gmail.com"
+    }
+  ],
+  "license": "WTFPL",
+  "readmeFilename": "README.md",
+  "gitHead": "08020875c22b1655ab0c9e5495a44df286687240",
+  "bugs": {
+    "url": "https://github.com/yarri/Atk14Book/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-debug": "^2.1.0",
+    "gulp-jscs": "^2.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint-stylish": "^2.0.1"
+  }
+}
