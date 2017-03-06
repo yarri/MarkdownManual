@@ -39,6 +39,9 @@ bude vykresleno jako:
 
 ### Zarovnání hodnot doprava
 
+Zarovnání textu doprava dosáhneme zapsáním dvojtečky k pravému okraji oddělovače záhlaví.
+Je to vhodné nejen pro ceníky.
+
 ```
 | Úkon               | Cena                |
 |--------------------|--------------------:|
@@ -54,3 +57,27 @@ bude vykresleno jako:
 | Stříhání vsedě     | 120 Kč              |
 | Stříhání vestoje   | 130 Kč              |
 | Vysoušení          | _dle objemu_        |
+
+### Zarovnání hodnot na střed
+
+Zarovnání hodnot na střed docílíme zapsáním dvojteček na každou stranu oddělovače záhlaví.
+
+```
+| Den         | Barva        |
+|:-----------:|:------------:|
+| Pondělí     | Modrá        |
+| Úterý       | Šedivá       |
+| Středa      | Škaredá      |
+| Čtvrtek     | Zelená       |
+| Pátek       | Veliká       |
+| Sobota      | Bílá         |
+```
+
+| Den         | Barva        |
+|:-----------:|:------------:|
+| Pondělí     | Modrá        |
+| Úterý       | Šedivá       |
+| Středa      | Škaredá      |
+| Čtvrtek     | Zelená       |
+| Pátek       | Veliká       |
+| Sobota      | Bílá         |
