@@ -54,6 +54,8 @@
 
 		{render partial="shared/layout/analyticstracking"}
 
+		<meta name="google-site-verification" content="33ODtAtgCoVxVD4fanTObjqROJ7Abca4dNqjCRGHtIk" />
+
 	</head>
 
 	<body class="body_{$controller}_{$action}" data-controller="{$controller}" data-action="{$action}">
