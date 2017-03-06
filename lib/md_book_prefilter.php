@@ -17,19 +17,19 @@ class MdBookPrefilter {
 
 		$replaces = array();
 
-		if(preg_match_all('/\n\[Include (.+\.(inc|php|sql|tpl))\]\s*/',$raw,$matches_all,PREG_SET_ORDER)){
+		if(preg_match_all('/\n\[Include (.+\.(inc|php|sql|tpl))\]\s*?\n/',$raw,$matches_all,PREG_SET_ORDER)){
 			foreach($matches_all as $matches){
-				$replaces[$matches[0]] = "\n".$this->_place_source($matches[1]);
+				$replaces[$matches[0]] = "\n".$this->_place_source($matches[1])."\n";
 			}
 		}
 
-		if(preg_match_all('/\n\[Render (.+?)\]\s*/',$raw,$matches_all,PREG_SET_ORDER)){
+		if(preg_match_all('/\n\[Render (.+?)\]\s*?\n/',$raw,$matches_all,PREG_SET_ORDER)){
 			foreach($matches_all as $matches){
 				$renderer = $this->renderer;
 				$_content = $renderer($matches[1]);
 				$id = "mdbookreplace".uniqid();
 				$GLOBALS["md_book_replaces"][$id] = $renderer($matches[1]);
-				$replaces[$matches[0]] = "\n".$id;
+				$replaces[$matches[0]] = "\n$id\n";
 			}
 		}
 

@@ -95,7 +95,7 @@
 			<div class="bs-docs-header hidden-xs" id="content" tabindex="-1">
 				<div class="container">
 					<h1>Markdown Manual</h1>
-					<p>{t}Neexistuje taková bezcená kniha, v níž by nebylo napsáno alespoň něco dobrého.{/t}</p>
+					<p>{t}Neexistuje taková bezcená kniha, v níž by nebylo napsáno alespoň něco dobrého.{/t}{if $action=="index"}<sup>*</sup>{/if}</p>
 				</div>
 			</div>
 
