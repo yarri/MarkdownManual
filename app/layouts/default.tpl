@@ -29,7 +29,7 @@
 		<meta charset="utf-8">
 
 		<title>{trim}
-			{if $controller=="main" && $action=="index" && $namespace==""}
+			{if ($controller=="main" || $controller=="atk14_book") && $action=="index" && $namespace==""}
 				{"ATK14_APPLICATION_NAME"|dump_constant}
 			{else}
 				{$page_title} | {"ATK14_APPLICATION_NAME"|dump_constant}
@@ -80,10 +80,7 @@
 							<a href="http://www.atk14.net/">ATK14 Framework</a>
 						</li>
 						<li>
-							<a href="http://api.atk14.net/">API Reference</a>
-						</li>
-						<li>
-							<a href="http://www.atk14sites.net/">Who uses ATK14?</a>
+							<a href="http://www.atk14sites.net/">Kdo používá ATK14?</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

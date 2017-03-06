@@ -1,7 +1,7 @@
 Základní syntaxe Markdown
 =========================
 
-Následuje přehled syntaxe Markdown, kterou můžete použít ve vašem projektu.
+Následuje rychlý přehled základního formátování textu v Markdown.
 
 ### Nadpisy
 
@@ -13,7 +13,7 @@ Následuje přehled syntaxe Markdown, kterou můžete použít ve vašem projekt
 ### Toto je nadpis &lt;h3>
 #### Toto je nadpis &lt;h4>
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Odstavce a zalamování řádků
 
 Odstavce jsou odděleny jedním prázdným řádkem (konec odstavce, tzn. jako Enter ve Wordu). Pokud chcete v rámci jednoho odstavce zalomit řádek (jako Shift+Enter ve Wordu), zakončete tento řádek dvěma nebo více mezerami.
@@ -34,29 +34,41 @@ Odstavec 2
 Odstavec 3  
 se zalomenou řádkou
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Centrování textu
 
-    ### <center>Centrovaný nadpis h3</center>
+    #### <center>Centrovaný nadpis h4</center>
 
-### <center>Centrovaný nadpis h3</center>
+#### <center>Centrovaný nadpis h4</center>
 
 <br>
 <br>
 
     <center>
     
-    Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi. Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin nunc ornare vitae.
+    Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi.
+    Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in
+    turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin
+    ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin
+    nunc ornare vitae.
     
     </center>
 
 <center>
-    
-Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi. Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin nunc ornare vitae.
-    
+
+Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi.
+Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in
+turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin
+ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada
+fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin    
+nunc ornare vitae.
+
 </center>
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Zvýrazňování
 
     *tohle bude italika*  
@@ -75,10 +87,32 @@ __I tohle bude "tlustě"__
 
 Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velkého**_ je na obzoru.
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Seznamy
 
-#### Netříděný
+#### Netříděné seznamy
+
+Pro zápis seznamu použijeme pomlčky:
+
+    - jablko
+    - hruška
+    - hrášek
+
+- jablko
+- hruška
+- hrášek
+
+Stejně tak lze použít i hvězdičky:
+
+    * broskev
+    * nektarinka
+    * okurka
+
+* broskev
+* nektarinka
+* okurka
+
+Vnořený seznam:
 
     * Item 1
     * Item 2
@@ -90,7 +124,7 @@ Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velk�
   * Item 2a
   * Item 2b
 
-#### Tříděný
+#### Tříděné seznamy
 
     1. Item 1
     2. Item 2
@@ -104,7 +138,7 @@ Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velk�
    * Item 3a
    * Item 3b
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Odkazy {#odkazy}
 
 Všechny URL adresy, začínající www. nebo http://), nebo e-maily, které do textu zapíšte, budou automaticky převedeny na klikatelný odkaz.
@@ -122,13 +156,13 @@ info@ntvage.cz - automaticky
 
 Odkazy s třídou blank budou otevírány do nového okna.
 
-    [NTV AGE do nového okna](http://www.ntvage.cz/){.blank}
-    <a href="http://www.ntvage.cz" class="blank">NTV AGE.cz do nového okna podruhé</a>
+    Tradiční Markdown zápis: [NTV AGE do nového okna](http://www.ntvage.cz/){.blank}
+    HTML varianta: <a href="http://www.ntvage.cz" class="blank">NTV AGE.cz do nového okna podruhé</a>
 
-[NTV AGE do nového okna](http://www.ntvage.cz/){.blank}  
-<a href="http://www.ntvage.cz" class="blank">NTV AGE do nového okna podruhé</a>  
+Tradiční Markdown zápis: [NTV AGE do nového okna](http://www.ntvage.cz/){.blank}  
+HTML varianta: <a href="http://www.ntvage.cz" class="blank">NTV AGE do nového okna podruhé</a>  
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Citace
 
     William Shakespeare:
@@ -141,7 +175,7 @@ William Shakespeare:
 > Ještě nikdo nebyl takový filozof,
 > aby trpělivě snášel bolení zubů.
 
-<br>
+___________________________________________________________________________________________________________________________________________
 ### Tabulky
 
 ```
@@ -160,12 +194,4 @@ bude vykresleno jako:
 | Obsah v 1. sloupci | Obsah ve 2. sloupci |
 | Další obsah        | Další obsah         |
 
-Více o tabulkách najdete v [samostatné kapitole](/czech/tables/)
-
-
-<br>
-### Další zdroje informací o formátu Markdown
-
-* [Základní dokumentace](https://daringfireball.net/projects/markdown/)
-* [Rozšířené vlastnosti Markdown](https://michelf.ca/projects/php-markdown/extra/)
-* https://github.com/michelf/php-markdown
+Více o tabulkách najdete v [samostatné kapitole](/czech/tables/).
