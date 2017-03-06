@@ -61,7 +61,7 @@ echo $article->getTitle();
 var_dump($article->toArray());
 ```
 
-Pro zvýrazňování syntaxe je použita knihovna [GeSHi - Generic Syntax Highlighter](http://sourceforge.net/projects/geshi/). GeSHi obsahuje pravidla pro zýraznění [velkého množství jazyků](https://github.com/easybook/geshi/tree/master/geshi). Za zmínku stojí:
+Pro zvýrazňování syntaxe je použita knihovna [GeSHi - Generic Syntax Highlighter](http://sourceforge.net/projects/geshi/). GeSHi obsahuje pravidla pro zýraznění velkého množství jazyků. Za zmínku stojí:
 
 - php
 - javascript
@@ -70,3 +70,5 @@ Pro zvýrazňování syntaxe je použita knihovna [GeSHi - Generic Syntax Highli
 - xml
 - python
 - ruby
+
+Pro prozkoumání celkového seznamu jazyků přejděte do zdrojového kódu GeSHi: https://github.com/easybook/geshi/tree/master/geshi
