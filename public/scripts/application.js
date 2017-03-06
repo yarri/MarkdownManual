@@ -9,6 +9,12 @@
 			// Application-wide code.
 			init: function() {
 
+				// Odkaz se otevre do noveho okna, pokud ma css class 'blank'
+				$( "a.blank" ).click( function( ) {
+					window.open( this.href, "_blank" );
+					return false;
+				} );
+
 				// Form hints.
 				$( ".help-hint" ).each( function() {
 					var $this = $( this ),
