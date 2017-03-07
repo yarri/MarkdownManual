@@ -9,14 +9,16 @@ Markdown je dobrý pomocník při _tvorbě obsahu pro responzivní weby_. Nabíz
 
 Markdown lze pohodlně použít jako editor článků, ale i jako editor pro ostatní nečlánkový obsah. Ostatně i tato příručka je napsána v Markdown.
 
-Původní Markdown vymyslel pan John Gruber &mdash; stránky o původním Markdownu nejdete na adrese https://daringfireball.net/projects/markdown/.
-Oblíbené rozšíření Markdownu od pana Michela Fortina přineslo nové možnosti, např. zápis tabulek &mdash; informace o rozšířeném Markdownu najdete na adrese https://michelf.ca/projects/php-markdown/extra/.
+Původní Markdown vymyslel pan John Gruber v roce 2004. [^1] Oblíbené rozšíření od pana Michela Fortina přineslo do Markdownu nové možnosti, např. zápis tabulek. [^2]
 
 Markdown popisovaný v této příručce je Fortinův rozšířený Markdown doplněný o několik málo úprav. Na odlišnosti budete upozorněni.
 
-## Obsah
+### Obsah
 
 [Render table_of_contents]  
 _____
 
-Zdrojový kód této příručky je otevřený a dostupný na adrese https://github.com/yarri/MarkdownManual/. Pokud najdete v textu chybu či nepřesnosti nebo dostanete nápad na rozšíření dokumentace, nebojte se svůj poznatek zaslat autorovi příručky.
+Zdrojový kód této příručky je otevřený a dostupný na adrese [github.com/yarri/MarkdownManual/](https://github.com/yarri/MarkdownManual/). Pokud najdete v textu chybu či nepřesnosti nebo dostanete nápad na rozšíření dokumentace, nebojte se podělit s autorovem příručky.
+
+[^1]: Stránky o původním Markdownu nejdete na adrese https://daringfireball.net/projects/markdown/.
+[^2]: Informace o rozšířeném Markdownu najdete na adrese https://michelf.ca/projects/php-markdown/extra/.
