@@ -76,8 +76,45 @@ header {
 			text-align: center;
 		}
 	}
+
+
+	@media (max-width: @screen-sm-max) {
+
+		// Prestylovani sidebaru s obsahem.
+		// Ve velikost SM a XS se sidebar zmeni v paticku.
+		div[role=complementary] {
+			color: white;
+			background-color: @theme-color-darker;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			padding-bottom: 1em;
+			& > div {
+				.container;
+			}
+			h3 {
+				color: white;
+			}
+			ul.nav {
+				li {
+					a {
+						color: white;
+						&:hover, &: {
+							background-color: @theme-color-darker;
+						}
+					}
+					&.active {
+						a {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
+// Obsah knihy na Homepage
 ul.table-of-contents {
 	padding-left: 0px;
 	list-style-type: none;

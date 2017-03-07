@@ -4,11 +4,11 @@
 	{render partial="base_book/subchapters"}
 </div>
 
-<div class="col-md-3" role="complementary">
-
-	<h3>{t}Obsah{/t}</h3>
-	<ul class="nav nav-pills nav-stacked">
-		{!$navigation}
-	</ul>
-
+<div class="col-md-3" class="sidebar" role="complementary">
+	<div> {* Acts like .container in SM and XS, see styles *}
+		<h3>{t}Obsah{/t}</h3>
+		<ul class="nav nav-pills nav-stacked">
+			{!$navigation}
+		</ul>
+	</div>
 </div>
