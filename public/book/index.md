@@ -20,5 +20,3 @@ Markdown popisovaný v této příručce je Fortinův rozšířený Markdown dop
 _____
 
 Zdrojový kód této příručky je otevřený a dostupný na adrese https://github.com/yarri/MarkdownManual/. Pokud najdete v textu chybu či nepřesnosti nebo dostanete nápad na rozšíření dokumentace, nebojte se svůj poznatek zaslat autorovi příručky.
-
-*) V záhlaví je použit citát Johnsona Samuela, který zjevně není pravdivý :-)
