@@ -2,8 +2,17 @@ Základní syntaxe Markdown
 =========================
 
 Následuje rychlý přehled základního formátování textu v Markdown.
+Pro rychlou navigaci použijte kotvičky.
 
-### Nadpisy
+* [Nadpisy](#nadpisy)
+* [Odstavce](#odstavce)
+* [Zvýrazňování textu](#zvyraznovani-textu)
+* [Odkazy](#odkazy)
+* [Seznamy](#seznamy)
+* [Tabulky](#tabulky)
+* [Obrázky](#obrazky)
+
+### Nadpisy {#nadpisy}
 
     ## Toto je nadpis <h2>
     ### Toto je nadpis <h3>
@@ -13,29 +22,46 @@ Následuje rychlý přehled základního formátování textu v Markdown.
 ### Toto je nadpis &lt;h3>
 #### Toto je nadpis &lt;h4>
 
-___________________________________________________________________________________________________________________________________________
-### Odstavce a zalamování řádků
 
-Odstavce jsou odděleny jedním prázdným řádkem (konec odstavce, tzn. jako Enter ve Wordu). Pokud chcete v rámci jednoho odstavce zalomit řádek (jako Shift+Enter ve Wordu), zakončete tento řádek dvěma nebo více mezerami.
+___________________________________________________________________________________________________________________________________________
+### Odstavce {#odstavce}
+
+Odstavce se oddělují jedním nebo více prázdnými řádky.
+V rámci textu jednoho odstavce nemají případné konce řádků význam pro výsledné formátování.
+
+    Toto je první odstavec. Text pokračuje. Text stále pokračuje. Text stále pokračuje. A pokračuje. A konec.
+
+    Toto je druhý odstavec. Toto je rovněž součást druhého odstavce.
+    A toto je stále částí druhého odstavce.
+    A ješte toto.
+    Konec druhého odstavce.
+
+Toto je první odstavec. Text pokračuje. Text stále pokračuje. Text stále pokračuje. A pokračuje. A konec.
+                                                                                                          
+Toto je druhý odstavec. Toto je rovněž součást druhého odstavce.
+A toto je stále částí druhého odstavce.
+A ješte toto.
+Konec druhého odstavce.
+
+#### Zalamování řádků
+
+Pro zalomení řádku v rámci jednoho odstavce (jako Shift+Enter ve Wordu), je potřeba tento řádek zakončit dvěmi nebo více mezerami.
 
     Odstavec 1
     pořád obsah odstavce 1
 
-    Odstavec 2
-
-    Odstavec 3<mezera><mezera>  
+    Odstavec 2<mezera><mezera>  
     se zalomenou řádkou
 
 Odstavec 1
 pořád obsah odstavce 1
 
-Odstavec 2
-
-Odstavec 3  
+Odstavec 2  
 se zalomenou řádkou
 
+
 ___________________________________________________________________________________________________________________________________________
-### Zvýrazňování
+### Zvýrazňování textu {#zvyraznovani-textu}
 
     *tohle bude italika*  
     _tohle taky italika_
@@ -43,7 +69,7 @@ ________________________________________________________________________________
     **Tohle bude "tlustě"**  
     __I tohle bude "tlustě"__
     
-    Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velkého**_ je na obzoru.
+    Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velkého** je na obzoru_.
 
 *tohle bude italika*  
 _tohle taky italika_
@@ -51,22 +77,27 @@ _tohle taky italika_
 **Tohle bude "tlustě"**  
 __I tohle bude "tlustě"__
 
-Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velkého**_ je na obzoru.
+Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velkého** je na obzoru_.
+
 
 ___________________________________________________________________________________________________________________________________________
 ### Odkazy {#odkazy}
 
 Všechny URL adresy, začínající www. nebo http://), nebo e-maily, které do textu zapíšte, budou automaticky převedeny na klikatelný odkaz.
 
-    http://www.ntvage.cz/ - automaticky!  
-    [Stránky NTV AGE](http://www.ntvage.cz/)  
-    info@ntvage.cz - automaticky  
-    [Napište nám](mailto:info@ntvage.cz)  
+    http://www.atk14.net/ - automaticky!  
+    [Stránky frameworku ATK14](http://www.atk14.net/)  
+    [Odkaz s titulkem](https://duckduckgo.com/ "Vyhledávač bez šmírování")  
+    E-maily:  
+    info@atk14.net - automaticky  
+    [Napište nám](mailto:info@atk14.net)
 
-http://www.ntvage.cz/ - automaticky!  
-[Stránky NTV AGE](http://www.ntvage.cz/)  
-info@ntvage.cz - automaticky  
-[Napište nám](mailto:info@ntvage.cz)  
+http://www.atk14.net/ - automaticky!  
+[Stránky frameworku ATK14](http://www.atk14.net/)  
+[Odkaz s titulkem](https://duckduckgo.com/ "Vyhledávač bez šmírování")  
+E-maily:  
+info@example.com - automaticky  
+[Napište nám](mailto:info@example.com)
 
 
     Odkazy označené CSS třídou blank budou otevírány do nového okna.
@@ -77,8 +108,9 @@ Odkazy s třídou blank budou otevírány do nového okna.
 
 [Odkaz do nového okna](http://www.atk14.net/){.blank}  
 
+
 ___________________________________________________________________________________________________________________________________________
-### Seznamy
+### Seznamy {#seznamy}
 
 #### Netříděné seznamy
 
@@ -117,7 +149,7 @@ Pro zápis seznamu použijeme pomlčky...
 V položkách seznamu pohodlně značkujeme.
 
 * mise, **vize**
-* _prověřené nástroje_ (www.atk14.net, [GitHub](https://github.com/)
+* _prověřené nástroje_ (www.atk14.net, [GitHub](https://github.com/))
 * ... a další
 
 Je to jednoduché.
@@ -180,8 +212,9 @@ Tříděné a netříděné seznamy lze kombinovat.
   * Item 2a
   * Item 2b
 
+
 ___________________________________________________________________________________________________________________________________________
-### Tabulky
+### Tabulky {#tabulky}
 
 ```
 | První hlavička     | Druhá hlavička      |
@@ -201,49 +234,16 @@ bude vykresleno jako:
 
 Více o tabulkách najdete v [samostatné kapitole.](/czech/tables/)
 
-___________________________________________________________________________________________________________________________________________
-### Centrování textu
-
-    #### <center>Centrovaný nadpis h4</center>
-
-#### <center>Centrovaný nadpis h4</center>
-
-<br>
-<br>
-
-    <center>
-    
-    Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi.
-    Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in
-    turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin
-    ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada
-    fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin
-    nunc ornare vitae.
-    
-    </center>
-
-<center>
-
-Centrovaný odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Curabitur et vestibulum odio, sit amet malesuada leo. Phasellus non vulputate mi.
-Nulla facilisi. Quisque magna nibh, tristique et ultrices eu, porttitor in
-turpis. Praesent sapien sem, fringilla sed consequat a, congue eu quam. Proin
-ultricies purus id erat fringilla blandit vitae ut elit. Interdum et malesuada
-fames ac ante ipsum primis in faucibus. Donec blandit quam felis, ac sollicitudin    
-nunc ornare vitae.
-
-</center>
 
 ___________________________________________________________________________________________________________________________________________
-### Citace
+### Obrázky {#obrazky}
 
-    William Shakespeare:
-    
-    > Ještě nikdo nebyl takový filozof,
-    > aby trpělivě snášel bolení zubů.
+Pravidlo pro zápis obrázku je následující:
 
-William Shakespeare:
+    ![Alt text](ImageUrl "Title text")
 
-> Ještě nikdo nebyl takový filozof,
-> aby trpělivě snášel bolení zubů.
+Tedy konkrétní příklad:
+
+    ![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Cítím se dnes jako šéf")
+
+![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Cítím se dnes jako šéf")
