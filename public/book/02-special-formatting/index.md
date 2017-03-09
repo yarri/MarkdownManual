@@ -3,12 +3,25 @@ Speciální formátování
 
 Tato kapitola pojednává o formátování v Markdown, která nejsou tak často používána.
 
+* [Odkazy otevírané do nového okna](#odkazy-otevirane-do-noveho-okna)
 * [Citace](#citace)
 * [Centrování textu](#centrovani-textu)
 * [Vkládané HTML](#vkladane-html)
 * [Horizontální oddělovač](#horizontalni-oddelovac)
 
+### Odkazy otevírané do nového okna {#odkazy-otevirane-do-noveho-okna}
 
+
+    Odkazy označené CSS třídou blank budou otevírány do nového okna.
+
+    [Odkaz do nového okna](http://www.atk14.net/){.blank}
+
+Odkazy s třídou blank budou otevírány do nového okna.
+
+[Odkaz do nového okna](http://www.atk14.net/){.blank}  
+
+
+___________________________________________________________________________________________________________________________________________
 ### Citace {#citace}
 
     William Shakespeare:

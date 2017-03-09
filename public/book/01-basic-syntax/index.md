@@ -103,31 +103,67 @@ Lze kombinovat: Pozorně čtěte, toto je _**fakt důležité!**_ Něco _**velk�
 ___________________________________________________________________________________________________________________________________________
 ### Odkazy {#odkazy}
 
-Všechny URL adresy, začínající www. nebo http://), nebo e-maily, které do textu zapíšte, budou automaticky převedeny na klikatelný odkaz.
+Pravidla pro zápis odkazu jsou následující:
+
+    Přímý zápis adresy
+
+    [Text odkazu](http://adresa/)
+    [Text odkazu](http://adresa/ "titulek")
+
+    Reference
+
+    [Text odkazu][1]
+    [Text jiného odkazu][2]
+    [Text odkazu s pojmenovanou referencí][zajimavy odkaz]
+
+    Seznam referencí lze umístit např. na konci textu.
+
+    [1]: http://adresa/
+    [2]: http://jina.adresa/ "Volitelný titulek" 
+    [zajimavy odkaz]:  http://zajimava.adresa/ (Jinak zapsaný titulek)
+
+Všechny volně zapsané adresy začínající _www._, _http://_, _https://_, nebo _e-maily_ jsou automaticky převedeny na klikatelný odkaz.
+
+    Odkazy na stránky:
 
     http://www.atk14.net/ - automaticky!  
     [Stránky frameworku ATK14](http://www.atk14.net/)  
     [Odkaz s titulkem](https://duckduckgo.com/ "Vyhledávač bez šmírování")  
+    Reference: [Kostra základní aplikace][1]  
+    Pojmenovaná Reference: [Embryo][embryo] toho zatím moc neumí
+
     E-maily:  
-    info@atk14.net - automaticky  
-    [Napište nám](mailto:info@atk14.net)
+
+    info@example.com - automaticky  
+    [Napište nám](mailto:info@example.com)
+
+    Seznam referencí:
+
+    [1]: http://skelet.atk14.net/ "ATK14 Skelet"
+    [embryo]: http://embryo.atk14.net/ (ATK14 Embryo)
+
+Odkazy na stránky:
 
 http://www.atk14.net/ - automaticky!  
 [Stránky frameworku ATK14](http://www.atk14.net/)  
 [Odkaz s titulkem](https://duckduckgo.com/ "Vyhledávač bez šmírování")  
+Reference: [Kostra základní aplikace][1]  
+Pojmenovaná Reference: [Embryo][embryo] toho zatím moc neumí
+
 E-maily:  
+
 info@example.com - automaticky  
 [Napište nám](mailto:info@example.com)
 
+Seznam referencí:
 
-    Odkazy označené CSS třídou blank budou otevírány do nového okna.
+[1]: http://skelet.atk14.net/ "ATK14 Skelet"
+[embryo]: http://embryo.atk14.net/ (ATK14 Embryo)
 
-    [Odkaz do nového okna](http://www.atk14.net/){.blank}
-
-Odkazy s třídou blank budou otevírány do nového okna.
-
-[Odkaz do nového okna](http://www.atk14.net/){.blank}  
-
+**Upozornění:**  
+Jistě jste si všimli, že _Seznam referencí_ není ve výsledném textu zobrazen. To je proto, že při transformaci Markdownu do HTML je účelnější
+reference nahradit zpět do míst, která na ně odkazují. Při převodu do tiskového formátu (např. PDF) může být zase vhodnější seznam referencí
+zachovat viditelný.
 
 ___________________________________________________________________________________________________________________________________________
 ### Seznamy {#seznamy}
