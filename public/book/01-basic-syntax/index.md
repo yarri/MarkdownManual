@@ -14,13 +14,33 @@ Pro rychlou navigaci použijte kotvičky.
 
 ### Nadpisy {#nadpisy}
 
-    ## Toto je nadpis <h2>
-    ### Toto je nadpis <h3>
-    #### Toto je nadpis <h4>
+```
+# Toto je nadpis H1
+## Toto je nadpis H2
+### Toto je nadpis H3
+#### Toto je nadpis H4
 
-## Toto je nadpis &lt;h2>
-### Toto je nadpis &lt;h3>
-#### Toto je nadpis &lt;h4>
+Alternativní zápis pro nadpisy H1 a H2:
+
+Toto je nadpis H1
+=================
+
+Toto je nadpis H2
+-----------------
+```
+
+# Toto je nadpis H1
+## Toto je nadpis H2
+### Toto je nadpis H3
+#### Toto je nadpis H4
+
+Alternativní zápis pro nadpisy H1 a H2:
+
+Toto je nadpis H1
+=================
+
+Toto je nadpis H2
+-----------------
 
 
 ___________________________________________________________________________________________________________________________________________
@@ -129,7 +149,7 @@ ________________________________________________________________________________
     V položkách seznamu pohodlně značkujeme.
 
     * mise, **vize**
-    * _prověřené nástroje_ (www.atk14.net, [GitHub](https://github.com/)
+    * _prověřené nástroje_ (www.atk14.net, [GitHub](https://github.com/))
     * ... a další
 
     Je to jednoduché.
