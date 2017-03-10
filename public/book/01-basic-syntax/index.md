@@ -272,6 +272,8 @@ Tříděné a netříděné seznamy lze kombinovat.
 ___________________________________________________________________________________________________________________________________________
 ### Tabulky {#tabulky}
 
+Zapis tabulky je následující.
+
 ```
 | První hlavička     | Druhá hlavička      |
 |--------------------|---------------------|
@@ -287,6 +289,18 @@ bude vykresleno jako:
 | Obsah pro 1. buňku | Obsah pro 2. buňku  |
 | Obsah v 1. sloupci | Obsah ve 2. sloupci |
 | Další obsah        | Další obsah         |
+
+Není potřeba dodržovat šířku políček ve stejném sloupci. Mezery se doplňují pouze pro zvýšení čitelnosti tabulky ve zdrojovém textu. Tabulku tak lze zapsat třeba i takto:
+
+```
+|První hlavička|2. hlavička|třetí...|Hlavička D|Hlavička E|
+|-|-|-|-|-|
+|alfa|beta|gama|delta|epsilon|
+```
+
+|První hlavička|2. hlavička|třetí...|Hlavička D|Hlavička E|
+|-|-|-|-|-|
+|alfa|beta|gama|delta|epsilon|
 
 Více o tabulkách najdete v [samostatné kapitole.](/czech/tables/)
 
