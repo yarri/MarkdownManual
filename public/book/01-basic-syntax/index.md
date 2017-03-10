@@ -314,6 +314,6 @@ Pravidlo pro zápis obrázku je následující:
 
 Tedy konkrétní příklad:
 
-    ![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Cítím se dnes jako šéf")
+    ![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Dnes se cítím jako šéf")
 
-![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Cítím se dnes jako šéf")
+![Obrázek s kocourem](http://www.cutestpaw.com/wp-content/uploads/2012/06/Like-a-BOSS.jpg "Dnes se cítím jako šéf")
