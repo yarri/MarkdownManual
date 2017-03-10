@@ -94,7 +94,7 @@
 			<div class="bs-docs-header hidden-xs" id="content" tabindex="-1">
 				<div class="container">
 					<h1>Markdown Manual</h1>
-					<p>{t escape=no}Neexistuje taková bezcená kniha, v níž by nebylo napsáno alespoň něco <del>dobrého</del>.{/t}</p>
+					<p>{t escape=no}Příručka pro psaní textu ve značkovacím jazyce Markdown{/t}</p>
 				</div>
 			</div>
 
