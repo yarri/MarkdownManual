@@ -14,5 +14,34 @@ or <a href="mailto:we@earth.net">we@earth.net</a></p>',$dm->transform("Contact a
 		$this->assertEquals('<h1><center>Title</center></h1>',$dm->transform('# <center>Title</center>'));
 
 		$this->assertEquals("<center>\n\n<p>Centered text block</p>\n\n</center>",$dm->transform("<center>\n\nCentered text block\n\n</center>"));
+
+		// HTML table
+		$src = '
+Paragraph #1
+
+<table>
+	<tr>
+		<th>key</th>
+		<td>val</td>
+	</tr>
+</table>
+
+Paragraph #2
+		';
+
+		$result = trim('
+<p>Paragraph #1</p>
+
+<table class="table table-bordered table-hover">
+	<tr>
+		<th>key</th>
+		<td>val</td>
+	</tr>
+</table>
+
+<p>Paragraph #2</p>
+		');
+
+		$this->assertEquals($result,$dm->transform($src));
 	}
 }
