@@ -68,9 +68,6 @@ Zarovnání hodnot na střed docílíme zapsáním dvojteček na každou stranu 
 | Pondělí     | Modrá        |
 | Úterý       | Šedivá       |
 | Středa      | Škaredá      |
-| Čtvrtek     | Zelená       |
-| Pátek       | Veliká       |
-| Sobota      | Bílá         |
 ```
 
 | Den         | Barva        |
@@ -78,6 +75,65 @@ Zarovnání hodnot na střed docílíme zapsáním dvojteček na každou stranu 
 | Pondělí     | Modrá        |
 | Úterý       | Šedivá       |
 | Středa      | Škaredá      |
-| Čtvrtek     | Zelená       |
-| Pátek       | Veliká       |
-| Sobota      | Bílá         |
+
+### Zápis tabulky v HTML
+
+Složitější tabulku lze vždycky zapsat pomocí HTML
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" align="center">Hlavička ukázkové tabulky</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th align="right" width="33%">Datum</th>
+          <td>30.4.2017</td>
+        </tr>
+        <tr>
+          <th align="right">Čas</th>
+          <td>13:23</td>
+        </tr>
+        <tr>
+          <th align="right">Sitace</th>
+          <td>jasno, teplo, slabý větřík od severozápadu</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2" align="center">Patička ukázkové tabulky</td>
+        </tr>
+      </tfoot>
+    </table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" align="center">Hlavička ukázkové tabulky</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th align="right" width="33%">Datum</th>
+      <td>30.4.2017</td>
+    </tr>
+    <tr>
+      <th align="right">Čas</th>
+      <td>13:23</td>
+    </tr>
+    <tr>
+      <th align="right">Sitace</th>
+      <td>jasno, teplo, slabý větřík od severozápadu</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="2" align="center">Patička ukázkové tabulky</td>
+    </tr>
+  </tfoot>
+</table>
