@@ -39,6 +39,8 @@ class MdBookPrefilter {
 
 		$replaces = array();
 
+		/*
+		// toto rozbiji tabulku zapsanou v HTML, kterazto neni cela na jedinem radku a ma nektere casti odsazene o 4 mezery ci 1 tabulator
 		if(preg_match_all('/\n(\t|    )((<\?|--|{\*|<).+?)(\n[^\s]|$)/s',$raw,$matches_all,PREG_SET_ORDER)){
 			foreach($matches_all as $matches){
 				$tr = array(
@@ -51,6 +53,7 @@ class MdBookPrefilter {
 				$replaces[$matches[0]] = "\n".$this->_highlight_intext_source($matches[2],$lang).$matches[4];
 			}
 		}
+		*/
 
 		$raw = strtr($raw,$replaces);
 
@@ -103,12 +106,24 @@ class MdBookPrefilter {
 }
 
 function _md_book_replace_source($matches){
-	($lang = trim($matches[1])) || ($lang = "auto");
+	($lang = trim($matches[1])); // "php", "sql", "auto"
 	$source = trim($matches[2]);
-	$geshi = new GeSHi($source, $lang);
-  $geshi->enable_keyword_links(false);
+
 	$id = "mdbookreplace".uniqid();
-	$GLOBALS["md_book_replaces"][$id] = $geshi->parse_code();
+
+	if(strlen($lang)){
+		$geshi = new GeSHi($source, $lang);
+		$geshi->enable_keyword_links(false);
+		$geshi->set_overall_style("");
+		$geshi->enable_classes(false);
+		$source = $geshi->parse_code();
+
+		$source = preg_replace('/^<pre class="[^"]+"/','<pre',$source); // '<pre class="javascript">' -> '<pre>'
+	}else{
+		$source = '<pre><code>'.htmlentities($source).'</code></pre>';
+	}
+
+	$GLOBALS["md_book_replaces"][$id] = $source;
 	return $id;
 }
 
