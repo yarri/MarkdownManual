@@ -72,7 +72,15 @@ nunc ornare vitae.
 ___________________________________________________________________________________________________________________________________________
 ### Vkládané HTML {#vkladane-html}
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+HTML formátování lze použít v Markdown dokumentu a ve většině případů to zafunguje velmi dobře.
+
+    <dl>
+      <dt>Definition list</dt>
+      <dd>Is something people use sometimes.</dd>
+
+      <dt>Markdown in HTML</dt>
+      <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+    </dl>
 
 <dl>
   <dt>Definition list</dt>
@@ -86,33 +94,29 @@ ________________________________________________________________________________
 ### Horizontální oddělovač {#horizontalni-oddelovac}
 
 ```
-Tři nebo více...
+Tři nebo více pomlček,
 
 ---
 
-pomlček
+... hvězdiček nebo
 
 ***
 
-hvězdiček
+... podtržítek
 
 ___
 
-podtržítek
 ```
 
-Tři nebo více...
+Tři nebo více pomlček,
 
 ---
 
-pomlček
+... hvězdiček nebo
 
 ***
 
-hvězdiček
+... podtržítek
 
 ___
-
-podtržítek
-
 
