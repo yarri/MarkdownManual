@@ -7,7 +7,7 @@ V tabulce lze používat základní  zvýrazňování textu, odkazy a inline htm
 | První hlavička                 | Druhá hlavička    |
 |--------------------------------|-------------------|
 | Obsah                          | Další obsah       |
-| Obsah **3. buňky**             | Obsah _4. buňku_  |
+| Obsah **3. buňky**             | Obsah _4. buňky_  |
 | [Odkaz](http://www.atk14.net/) | <del>hotovo</del> |
 ```
 
@@ -16,7 +16,7 @@ bude zobrazeno jako:
 | První hlavička                 | Druhá hlavička    |
 |--------------------------------|-------------------|
 | Obsah                          | Další obsah       |
-| Obsah **3. buňky**             | Obsah _4. buňku_  |
+| Obsah **3. buňky**             | Obsah _4. buňky_  |
 | [Odkaz](http://www.atk14.net/) | <del>hotovo</del> |
 
 ### Tabulka bez záhlaví
