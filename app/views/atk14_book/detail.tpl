@@ -8,7 +8,9 @@
 	<div> {* Acts like .container in SM and XS, see styles *}
 		<h3>{t}Obsah{/t}</h3>
 		<ul class="nav nav-pills nav-stacked">
-			{!$navigation}
+			{foreach $navigation->getItems() as $item}
+				<li{if $item->isActive()} class="active"{/if}><a href="{$item->getUrl()}">{!$item->getTitle()}</a></li>
+			{/foreach}
 		</ul>
 	</div>
 </div>
