@@ -1,5 +1,5 @@
 <?php
-class MdBookPrefilter {
+class MdBookPrefilter extends DrinkMarkdownFilter {
 
 	function __construct($options = []){
 		$options += [
@@ -9,7 +9,7 @@ class MdBookPrefilter {
 		$this->renderer = $options["renderer"];
 	}
 
-	function filter($raw){
+	function filter($raw,$transformer){
 		$out = array();
 		$GLOBALS["md_book_replaces"] = array();
 
