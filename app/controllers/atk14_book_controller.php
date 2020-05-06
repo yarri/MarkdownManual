@@ -13,7 +13,7 @@ class Atk14BookController extends BaseBookController{
 
 	function detail(){
 		parent::detail();
-		
+
 		if(!$this->chapter){
 			// Perhaps error 404
 			return;
