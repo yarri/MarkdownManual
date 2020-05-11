@@ -1,8 +1,8 @@
 <?php
-class MainController extends ApplicationController{
-	function index(){
-		$this->_redirect_to(array(
-			"controller" => "atk14_book",
-		));
-	}
+require_once( __DIR__ . "/md_book_base.php");
+
+class MainController extends MdBookBaseController {
+
+	var $book_dir = ATK14_DOCUMENT_ROOT . "/public/markdown_manual/";
+
 }

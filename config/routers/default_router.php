@@ -38,8 +38,8 @@ class DefaultRouter extends Atk14Router{
 
 	function setUp(){
 
-		$this->addRoute("/czech/<id>/","cs/atk14_book/detail");
-		$this->addRoute("/czech/","cs/atk14_book/index");
+		$this->addRoute("/czech/<id>/","cs/main/detail");
+		$this->addRoute("/czech/","cs/main/index");
 
 		$this->addRoute("/sitemap.xml","cs/atk14_book/index",["format" => "sitemap"]);
 

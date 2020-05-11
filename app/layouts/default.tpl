@@ -99,19 +99,12 @@
 			</div>
 
 		</header>
-		
 
-
-		<div class="container{if $section_navigation} has-nav-section{/if}">
+		<div class="container">
 			{*render partial="shared/layout/header" *}
+			{render partial="shared/breadcrumbs"}
 
 			<div class="body">
-				{if $section_navigation}
-					<nav class="nav-section">
-						{render partial="shared/layout/section_navigation"}
-					</nav>
-				{/if}
-
 				<div class="content-main">
 					{render partial="shared/layout/flash_message"}
 					{placeholder}
