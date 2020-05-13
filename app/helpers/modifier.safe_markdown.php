@@ -1,0 +1,1 @@
+../../vendor/atk14/drink-markdown/src/app/helpers/modifier.safe_markdown.php
