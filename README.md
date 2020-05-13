@@ -5,7 +5,7 @@ Toto je příručka pro Markdown psaná v jazyce českém.
 
 Markdown Manual je provozován na adrese <http://markdown.plovarna.cz/>.
 
-Zrojový text příručky se nachází v adresáři [public/book](https://github.com/yarri/MarkdownManual/tree/master/public/book).
+Zrojový text příručky byl vyčleněn do samostaného projektu [github.com/yarri/MarkdownManual.MdBook](https://github.com/yarri/MarkdownManual.MdBook/tree/master/src/public/markdown_manual).
 
 Instalace
 ---------
