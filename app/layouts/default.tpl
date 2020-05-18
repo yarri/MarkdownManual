@@ -64,7 +64,7 @@
 			
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container">
-		<a class="navbar-brand" href="/">_{"ATK14_APPLICATION_NAME"|dump_constant}</a>
+		<a class="navbar-brand" href="/"><i class="fab fa-markdown"></i> {"ATK14_APPLICATION_NAME"|dump_constant}</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fas fa-bars"></i>
 		</button>
