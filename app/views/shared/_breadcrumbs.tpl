@@ -2,11 +2,11 @@
 <ol class="breadcrumb hidden-print">
 	{foreach $breadcrumbs as $breadcrumb}
 			{if $breadcrumb->getUrl() && !$breadcrumb@last}
-			<li>
+			<li class="breadcrumb-item">
 				<a href="{$breadcrumb->getUrl()}">{$breadcrumb->getTitle()}</a>
 			</li>
 			{else}
-			<li class="active">
+			<li class="breadcrumb-item active">
 				{$breadcrumb->getTitle()}
 			</li>
 			{/if}

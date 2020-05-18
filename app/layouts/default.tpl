@@ -60,40 +60,31 @@
 
 	<body class="body_{$controller}_{$action}" data-controller="{$controller}" data-action="{$action}">
 
-		<header>
+		<header class="header-main">
+			
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="/">_{"ATK14_APPLICATION_NAME"|dump_constant}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
+		</button>
 
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/"><i class="glyphicon glyphicon-home hidden-xs"></i> <strong class="title hidden visible-xs">{"ATK14_APPLICATION_NAME"|dump_constant}</strong></a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="http://www.atk14.net/">ATK14 Framework</a>
-						</li>
-						<li>
-							<a href="http://www.atk14sites.net/">Kdo používá ATK14?</a>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div> <!-- /.container -->
-		</nav>
-
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.atk14.net/">ATK14 Framework</a>
+				</li>
+				<li class="nav-link" class="nav-item">
+					<a href="http://www.atk14sites.net/">Kdo používá ATK14?</a>
+				</li>
+			</ul>
+		</div>
+  </div>
+</nav>
 
 			<!-- Docs page layout -->
-			<div class="bs-docs-header hidden-xs" id="content" tabindex="-1">
+			<div class="bs-docs-header d-none d-sm-block" id="content" tabindex="-1">
 				<div class="container">
-					<h1>Markdown Manual</h1>
 					<p>{t escape=no}Příručka pro psaní textu ve značkovacím jazyce Markdown{/t}</p>
 				</div>
 			</div>
