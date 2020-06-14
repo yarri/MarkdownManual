@@ -1,0 +1,46 @@
+// Admin header and breadcrumbs
+
+ol.breadcrumb {
+	border-bottom: 1px solid $border-color;
+}
+
+.header-main {
+	h1, .h1 {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+}
+
+header.header-main {
+	padding: 0;
+	background-color: $dark;
+	color: white;
+	//padding-bottom: 0.5rem;
+	a {
+		color: inherit;
+	}
+	.navbar {
+		border-bottom: 1px solid rgba(white,0.5);
+		.navbar-collapse {
+			justify-content: flex-end;
+		}
+		.navbar-toggler {
+			border: none;
+			&:focus {
+				outline: none;
+			}
+		}
+		.navbar-brand {
+			font-weight: bold;
+		}
+	}
+
+	.bs-docs-header {
+		font-size: $font-size-sm;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		p:last-child {
+			margin: 0;
+		}
+	}
+}

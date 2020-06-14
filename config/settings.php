@@ -14,7 +14,10 @@ define("ATK14_APPLICATION_NAME","Markdown Manual");
 define("ATK14_HTTP_HOST",PRODUCTION ? "www.markdown-manual.cz" : "markdown-manual.localhost");
 define("DEFAULT_EMAIL","your@email");
 
-define("USING_BOOTSTRAP4",false);
+date_default_timezone_set('Europe/Prague');
+
+definedef("USING_BOOTSTRAP4",true);
+definedef("USING_FONTAWESOME",true);
 
 if(DEVELOPMENT || TEST){
 	// a place for development and testing environment settings

@@ -2,18 +2,22 @@
 ( function( window, $, undefined ) {
 	"use strict";
 	var document = window.document,
+		//UTILS = window.UTILS, // Uncomment this if you need something from UTILS
 
-	SKELET = {
+	APPLICATION = {
 		common: {
 
 			// Application-wide code.
 			init: function() {
 
-				// Odkaz se otevre do noveho okna, pokud ma css class 'blank'
-				$( "a.blank" ).click( function( ) {
-					window.open( this.href, "_blank" );
-					return false;
+				// Restores email addresses misted by the no_spam helper
+				$( ".atk14_no_spam" ).unobfuscate( {
+					atstring: "[at-sign]",
+					dotstring: "[dot-sign]"
 				} );
+
+				// Links with the "blank" class are pointing to new window
+				$( "a.blank" ).attr( "target", "_blank" );
 
 				// Form hints.
 				$( ".help-hint" ).each( function() {
@@ -33,6 +37,12 @@
 			}
 		},
 
+		logins: {
+			create_new: function() {
+				$( "#id_login" ).focus();
+			}
+		},
+
 		users: {
 
 			// Controller-wide code.
@@ -47,7 +57,7 @@
 				 */
 				var $login = $( "#id_login" ),
 					m = "Username is already taken.",
-					h = "<p class='alert alert-danger col-sm-4 col-sm-offset-2'>" + m + "</p>",
+					h = "<p class='alert alert-danger'>" + m + "</p>",
 					$status = $( h ).hide().appendTo( $login.closest( ".form-group" ) );
 
 				$login.on( "change", function() {
@@ -89,9 +99,9 @@
 	 * Garber-Irish DOM-based routing.
 	 * See: http://goo.gl/z9dmd
 	 */
-	SKELET.UTIL = {
+	APPLICATION.INITIALIZER = {
 		exec: function( controller, action ) {
-			var ns = SKELET,
+			var ns = APPLICATION,
 				c = controller,
 				a = action;
 
@@ -109,15 +119,15 @@
 			controller = body.getAttribute( "data-controller" ),
 			action = body.getAttribute( "data-action" );
 
-			SKELET.UTIL.exec( "common" );
-			SKELET.UTIL.exec( controller );
-			SKELET.UTIL.exec( controller, action );
+			APPLICATION.INITIALIZER.exec( "common" );
+			APPLICATION.INITIALIZER.exec( controller );
+			APPLICATION.INITIALIZER.exec( controller, action );
 		}
 	};
 
-	// Expose SKELET to the global object.
-	window.SKELET = SKELET;
+	// Expose APPLICATION to the global object.
+	window.APPLICATION = APPLICATION;
 
 	// Initialize application.
-	SKELET.UTIL.init();
+	APPLICATION.INITIALIZER.init();
 } )( window, window.jQuery );
