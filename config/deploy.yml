@@ -1,9 +1,9 @@
 production:
-  server: "ntvage.webfactional.com"
+  server: "ntvage.opalstacked.com"
   user: "ntvage"
   url: http://markdown.plovarna.cz/
-  directory: "/home/ntvage/webapps/markdown_manual/"
-  deploy_repository: "ntvage@ntvage.webfactional.com:repos/markdown_manual.git"
+  directory: "/home/{{user}}/apps/markdown_manual/"
+  deploy_repository: "{{user}}@{{server}}:repos/markdown_manual.git"
   before_deploy:
   - "@local composer update"
   - "@local bower update"
