@@ -8,10 +8,8 @@
 * You can inspect all ATK14 system`s constants in sys/src/default_settings.inc
 */
 
-define("SECRET_TOKEN",PRODUCTION ? Files::GetFileContent(dirname(__FILE__)."/secret_token.txt") : "crDsduENNEnykcIwSqs0qI55AFco42NXj2AYNAqc0kTgImSBBUskdtjnlhMGwXBN");
-
 define("ATK14_APPLICATION_NAME","Markdown Manual");
-define("ATK14_HTTP_HOST",PRODUCTION ? "www.markdown-manual.cz" : "markdown-manual.localhost");
+define("ATK14_HTTP_HOST",PRODUCTION ? "markdown.plovarna.cz" : "markdown-manual.localhost");
 define("DEFAULT_EMAIL","your@email");
 
 date_default_timezone_set('Europe/Prague');
