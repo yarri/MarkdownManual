@@ -30,6 +30,16 @@ class ApplicationController extends Atk14Controller{
 	}
 
 	function _application_before_filter(){
+		if(PRODUCTION && (!$this->request->ssl() || $this->request->getHttpHost()!==ATK14_HTTP_HOST)){
+			$params = $this->params->toArray();
+			$this->_redirect_to($params,[
+				"with_hostname" => ATK14_HTTP_HOST,
+				"ssl" => true,
+        "moved_permanently" => true,
+			]);
+			return;
+		}
+
 		$this->response->setContentType("text/html");
 		$this->response->setContentCharset("UTF-8");
 		$this->tpl_data["current_year"] = date("Y");
