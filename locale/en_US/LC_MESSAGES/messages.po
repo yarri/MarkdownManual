@@ -5,345 +5,372 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-16 15:18+0100\n"
-"PO-Revision-Date: 2011-02-16 15:06+0100\n"
-"Last-Translator: Yarri <yarri@listonos.cz>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2022-02-20 15:52+0100\n"
+"PO-Revision-Date: 2022-02-20 15:52+0100\n"
+"Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../app/controllers/creatures_controller.inc:34
-#: ../sys/skelet/app/controllers/creatures_controller.inc:34
-msgid "A new creature has been successfuly created"
-msgstr ""
-
-#: ../app/controllers/creatures_controller.inc:43
-#: ../sys/skelet/app/controllers/creatures_controller.inc:43
-#, php-format
-msgid "Detail of the creature #%s"
-msgstr ""
-
-#: ../app/controllers/creatures_controller.inc:50
-#: ../sys/skelet/app/controllers/creatures_controller.inc:50
-#, php-format
-msgid "Editing the creature #%s"
-msgstr ""
-
-#: ../app/controllers/creatures_controller.inc:57
-#: ../sys/skelet/app/controllers/creatures_controller.inc:57
-msgid "The creature has been changed successfuly."
-msgstr ""
-
-#: ../app/controllers/main_controller.inc:4
-#: ../sys/skelet/app/controllers/main_controller.inc:4 smarty.c:83
-msgid "Welcome!"
-msgstr ""
-
-#: ../app/forms/creatures/create_new_form.inc:5
-#: ../sys/skelet/app/forms/creatures/create_new_form.inc:5 smarty.c:23
-#: smarty.c:38
-msgid "Name"
-msgstr ""
-
-#: ../app/forms/creatures/create_new_form.inc:10
-#: ../sys/skelet/app/forms/creatures/create_new_form.inc:10 smarty.c:41
-msgid "Description"
-msgstr ""
-
-#: ../app/forms/creatures/create_new_form.inc:16
-#: ../sys/skelet/app/forms/creatures/create_new_form.inc:16
-msgid "Image URL"
-msgstr ""
-
-#: ../app/forms/creatures/index_form.inc:7
-#: ../sys/skelet/app/forms/creatures/index_form.inc:7
-msgid "Search term"
-msgstr ""
-
-#: ../sys/src/atk14/atk14_locale.inc:37
-msgid "atk14.date_format"
-msgstr "m/d/Y"
-
-#: ../sys/src/atk14/atk14_locale.inc:56
-msgid "atk14.parse_date_pattern"
-msgstr "/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4})$/"
-
-#: ../sys/src/atk14/atk14_locale.inc:90
-msgid "atk14.datetime_format"
-msgstr "m/d/Y H:i"
-
-#: ../sys/src/atk14/atk14_locale.inc:103
-msgid "atk14.parse_datetime_pattern"
-msgstr ""
-"/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4}) (?<hours>"
-"[0-9]{2}):(?<minutes>[0-9]{2})$/"
-
-#: ../sys/src/atk14/atk14_locale.inc:116
-msgid "atk14.datetime_with_seconds_format"
-msgstr "m/d/Y H:i:s"
-
-#: ../sys/src/atk14/atk14_locale.inc:128
-msgid "atk14.parse_datetime_with_seconds_pattern"
-msgstr ""
-"/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4}) (?<hours>"
-"[0-9]{2}):(?<minutes>[0-9]{2}):(?<seconds>[0-9]{2}$/"
-
-#: ../sys/src/atk14/atk14_form.inc:163
-msgid "Formular obsahuje chyby, proto nemuze byt zpracovan."
-msgstr ""
-
-#: ../sys/src/atk14/atk14_sorting.inc:89
-msgid "Sort table by this column"
-msgstr ""
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../app/helpers/modifier.display_bool.php:9
-#: ../sys/skelet/app/helpers/modifier.display_bool.php:9
 msgid "Yes"
 msgstr ""
 
 #: ../app/helpers/modifier.display_bool.php:11
-#: ../sys/skelet/app/helpers/modifier.display_bool.php:11
 msgid "No"
 msgstr ""
 
-#: ../sys/src/atk14/helpers/function.paginator.php:64
-#: ../sys/src/atk14/helpers/function.paginator.php:127
-#, php-format
-msgid "%s items total"
+#: ../atk14/src/http/test/tc_http_response.php:189
+msgid "Hello World!"
 msgstr ""
 
-#: ../sys/src/atk14/helpers/function.paginator.php:78
-msgid "prev"
+#: ../atk14/src/http/test/tc_http_response.php:194
+msgid "Hello Another World!"
 msgstr ""
 
-#: ../sys/src/atk14/helpers/function.paginator.php:122
-msgid "next"
-msgstr ""
-
-#: ../sys/src/atk14/helpers/function.to_sentence.php:6
+#: ../atk14/src/atk14/helpers/modifier.to_sentence.php:12
+#: ../atk14/src/atk14/helpers/function.to_sentence.php:13
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/helpers/function.to_sentence.php:13
 msgid "and"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:58
-msgid "This field is required."
+#: ../atk14/src/atk14/helpers/block.a_destroy.php:42
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/helpers/block.a_destroy.php:42
+msgid "Are you sure?"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:59
-msgid "Enter a valid value."
+#: ../atk14/src/atk14/helpers/function.paginator.php:58
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/helpers/function.paginator.php:58
+msgid "items total"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:156 ../sys/src/forms/fields.php:354
-msgid "Ensure this value has at most %max% characters (it has %length%)."
+#: ../atk14/src/atk14/helpers/function.paginator.php:93
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/helpers/function.paginator.php:93
+msgid "Prev"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:157 ../sys/src/forms/fields.php:355
-msgid "Ensure this value has at least %min% characters (it has %length%)."
+#: ../atk14/src/atk14/helpers/function.paginator.php:94
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/helpers/function.paginator.php:94
+msgid "Next"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:158
-msgid "Ensure this value has at most %max% characters."
+#: ../atk14/src/atk14/test/tc_locale.php:5
+#: ../atk14/src/atk14/test/tc_locale.php:8
+msgid "Password"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:159
-msgid "Ensure this value has at least %min% characters."
+#: ../atk14/src/atk14/atk14_sorting.php:162
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_sorting.php:152
+msgid "Sort table by this column"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:160
-msgid "Ensure this value has between %min% and %max% characters."
+#: ../atk14/src/atk14/atk14_locale.php:70
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:70
+msgid "atk14.date_format"
+msgstr "m/d/Y"
+
+#: ../atk14/src/atk14/atk14_locale.php:90
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:90
+msgid "atk14.parse_date_pattern"
+msgstr "/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4})$/"
+
+#: ../atk14/src/atk14/atk14_locale.php:124
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:124
+msgid "atk14.datetime_format"
+msgstr "m/d/Y H:i"
+
+#: ../atk14/src/atk14/atk14_locale.php:137
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:137
+msgid "atk14.parse_datetime_pattern"
+msgstr ""
+"/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4}) (?"
+"<hours>[0-9]{2}):(?<minutes>[0-9]{2})$/"
+
+#: ../atk14/src/atk14/atk14_locale.php:150
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:150
+msgid "atk14.datetime_with_seconds_format"
+msgstr "m/d/Y H:i:s"
+
+#: ../atk14/src/atk14/atk14_locale.php:162
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:162
+msgid "atk14.parse_datetime_with_seconds_pattern"
+msgstr ""
+"/^(?<month>[0-9]{1,2})\\/(?<day>[0-9]{1,2})\\/(?<year>[0-9]{4}) (?"
+"<hours>[0-9]{2}):(?<minutes>[0-9]{2}):(?<seconds>[0-9]{2}$/"
+
+#: ../atk14/src/atk14/atk14_locale.php:179
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:179
+msgid "atk14.number_format.decimal_point"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:237
-msgid "Enter a whole number."
+#: ../atk14/src/atk14/atk14_locale.php:194
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_locale.php:194
+msgid "atk14.number_format.thousands_separator"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:238 ../sys/src/forms/fields.php:288
-msgid "Ensure this value is less than or equal to %value%."
+#: ../atk14/src/atk14/atk14_dispatcher.php:74
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_dispatcher.php:67
+msgid "Service Unavailable"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:239 ../sys/src/forms/fields.php:289
-msgid "Ensure this value is greater than or equal to %value%."
+#: ../atk14/src/atk14/atk14_dispatcher.php:75
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_dispatcher.php:68
+msgid "This site is in maintenance. Please come back later."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:287
-msgid "Enter a number."
+#: ../atk14/src/atk14/atk14_form.php:247
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_form.php:247
+msgid "The form contains errors, therefore it cannot be processed."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:396
+#: ../atk14/src/atk14/atk14_form.php:539
+#: ../vendor/atk14/drink-markdown/vendor/atk14/core/src/atk14_form.php:539
+msgid "Please, submit the form again"
+msgstr ""
+
+#: ../atk14/src/forms/test/custom_fields/url_field.php:12
+msgid "This doesn't look like an URL"
+msgstr ""
+
+#: ../atk14/src/forms/fields/email_field.php:21
 msgid "Enter a valid e-mail address."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:438
-msgid "Select a valid choice. That choice is not one of the available choices."
+#: ../atk14/src/forms/fields/file_field.php:39
+msgid "Ensure this file has at most %max_file_size% bytes (it has %file_size%)"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:439
-msgid "Please, choose the right option."
+#: ../atk14/src/forms/fields/file_field.php:40
+msgid "Unsupported file type: %mime_type%"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:507
-msgid "Enter a valid date."
+#: ../atk14/src/forms/fields/file_field.php:42
+msgid ""
+"The uploaded file exceeds the max file size value that is set on the server "
+"(%upload_max_filesize%)"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:542
-msgid "Enter a valid date, hours and minutes."
+#: ../atk14/src/forms/fields/file_field.php:43
+msgid ""
+"The uploaded file exceeds the max file size directive that was specified in "
+"the HTML form (%MAX_FILE_SIZE%)"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:555
-msgid "Enter a valid date, hours, minutes and seconds."
+#: ../atk14/src/forms/fields/file_field.php:44
+msgid "The uploaded file was only partially uploaded"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:584
-msgid "Select a valid choice. %(value)s is not one of the available choices."
+#: ../atk14/src/forms/fields/file_field.php:45
+msgid "Missing a temporary folder"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:585
-msgid "Enter a list of values."
+#: ../atk14/src/forms/fields/file_field.php:46
+msgid "Failed to write file to disk"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:586
-msgid "Please, choose the right options."
+#: ../atk14/src/forms/fields/file_field.php:47
+msgid "File upload stopped by an extension installed on the server"
 msgstr ""
 
-#: ../sys/src/forms/fields.php:637
+#: ../atk14/src/forms/fields/file_field.php:48
+msgid "An error occurred during file upload"
+msgstr ""
+
+#: ../atk14/src/forms/fields/ip_address_field.php:48
 msgid "Enter a valid IP address."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:671
-msgid "Ensure this file is image."
+#: ../atk14/src/forms/fields/date_time_with_seconds_field.php:14
+msgid "Enter a valid date, hours, minutes and seconds."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:672
+#: ../atk14/src/forms/fields/regex_field.php:25
+#: ../atk14/src/forms/fields/char_field.php:27
+msgid "Ensure this value has at most %max% characters (it has %length%)."
+msgstr ""
+
+#: ../atk14/src/forms/fields/regex_field.php:26
+#: ../atk14/src/forms/fields/char_field.php:28
+msgid "Ensure this value has at least %min% characters (it has %length%)."
+msgstr ""
+
+#: ../atk14/src/forms/fields/choice_field.php:37
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: ../atk14/src/forms/fields/choice_field.php:38
+msgid "Please, choose the right option."
+msgstr ""
+
+#: ../atk14/src/forms/fields/integer_field.php:32
+msgid "Enter a whole number."
+msgstr ""
+
+#: ../atk14/src/forms/fields/integer_field.php:33
+#: ../atk14/src/forms/fields/float_field.php:23
+msgid "Ensure this value is less than or equal to %value%."
+msgstr ""
+
+#: ../atk14/src/forms/fields/integer_field.php:34
+#: ../atk14/src/forms/fields/float_field.php:24
+msgid "Ensure this value is greater than or equal to %value%."
+msgstr ""
+
+#: ../atk14/src/forms/fields/date_field.php:21
+msgid "Enter a valid date."
+msgstr ""
+
+#: ../atk14/src/forms/fields/date_field.php:22
+msgid "Ensure this date is not newer than %value%."
+msgstr ""
+
+#: ../atk14/src/forms/fields/date_field.php:23
+msgid "Ensure this date is not older than %value%."
+msgstr ""
+
+#: ../atk14/src/forms/fields/image_field.php:22
+msgid "Ensure this file is image (it is %mime_type%)."
+msgstr ""
+
+#: ../atk14/src/forms/fields/image_field.php:24
+msgid "Ensure this image is %width_required% pixels wide (it is %width%)."
+msgstr ""
+
+#: ../atk14/src/forms/fields/image_field.php:25
+msgid "Ensure this image is %height_required% pixels high (it is %height%)."
+msgstr ""
+
+#: ../atk14/src/forms/fields/image_field.php:27
 msgid "Ensure this image is at most %max% pixels wide (it is %width%)."
 msgstr ""
 
-#: ../sys/src/forms/fields.php:673
-msgid "Ensure this value is at most %max% pixels high (it is %height%)."
+#: ../atk14/src/forms/fields/image_field.php:28
+msgid "Ensure this image is at most %max% pixels high (it is %height%)."
 msgstr ""
 
-#: smarty.c:2 smarty.c:5
-msgid "ATK14 Powered Website"
+#: ../atk14/src/forms/fields/image_field.php:29
+msgid "Ensure this image is at least %min% pixels wide (it is %width%)."
 msgstr ""
 
-#: smarty.c:8
-msgid "Listing creatures"
+#: ../atk14/src/forms/fields/image_field.php:30
+msgid "Ensure this image is at least %min% pixels high (it is %height%)."
 msgstr ""
 
-#: smarty.c:11
-msgid "Search"
+#: ../atk14/src/forms/fields/image_field.php:32
+msgid "Ensure this image is in a required format (it is %mime_type%)."
 msgstr ""
 
-#: smarty.c:14
-msgid "Create a new creature"
+#: ../atk14/src/forms/fields/char_field.php:29
+msgid "Ensure this value has at most %max% characters."
 msgstr ""
 
-#: smarty.c:17
-msgid "Nothing was found."
+#: ../atk14/src/forms/fields/char_field.php:30
+msgid "Ensure this value has at least %min% characters."
 msgstr ""
 
-#: smarty.c:20
-msgid "Id"
+#: ../atk14/src/forms/fields/char_field.php:31
+msgid "Ensure this value has between %min% and %max% characters."
 msgstr ""
 
-#: smarty.c:26
-msgid "Update creature"
+#: ../atk14/src/forms/fields/char_field.php:32
+msgid "Invalid byte sequence for charset %charset%."
 msgstr ""
 
-#: smarty.c:29
-msgid "detail"
+#: ../atk14/src/forms/fields/date_time_field.php:14
+msgid "Enter a valid date, hours and minutes."
 msgstr ""
 
-#: smarty.c:32
-msgid "edit"
+#: ../atk14/src/forms/fields/multiple_choice_field.php:35
+msgid "Select a valid choice. %value% is not one of the available choices."
 msgstr ""
 
-#: smarty.c:35
-msgid "destroy"
+#: ../atk14/src/forms/fields/multiple_choice_field.php:36
+msgid "Enter a list of values."
 msgstr ""
 
-#: smarty.c:44
-msgid "Image"
+#: ../atk14/src/forms/fields/multiple_choice_field.php:37
+msgid "Please, choose the right options."
 msgstr ""
 
-#: smarty.c:47
-msgid "An image of the creature"
+#: ../atk14/src/forms/fields/multiple_choice_field.php:38
+msgid "Please, select only one item."
 msgstr ""
 
-#: smarty.c:50
-msgid "New Creature Form"
+#: ../atk14/src/forms/fields/multiple_choice_field.php:39
+msgid "Please, select up to %max_choice_items% items."
 msgstr ""
 
-#: smarty.c:53
-msgid "Create new creature"
+#: ../atk14/src/forms/fields/float_field.php:22
+msgid "Enter a number."
 msgstr ""
 
-#: smarty.c:56
-msgid "Error 404: Page not found"
+#: ../atk14/src/forms/fields.php:235
+msgid "This field is required."
 msgstr ""
 
-#: smarty.c:59
-msgid "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
+#: ../atk14/src/forms/fields.php:236
+msgid "Enter a valid value."
 msgstr ""
 
-#: smarty.c:62
-msgid "This is app/views/application/error404.tpl template"
-msgstr ""
-
-#: smarty.c:65
-msgid "Go to the homepage"
-msgstr ""
-
-#: smarty.c:68
-msgid "required"
-msgstr ""
-
-#: smarty.c:71
-msgid "Example:"
-msgstr ""
-
-#: smarty.c:74
-msgid "Save"
-msgstr ""
-
-#: smarty.c:77
+#: smarty.c:2 smarty.c:38 smarty.c:74 smarty.c:113 smarty.c:152
 msgid "The following difficulties have occurred during the form processing:"
 msgstr ""
 
-#: smarty.c:80
+#: smarty.c:5 smarty.c:41 smarty.c:77 smarty.c:116 smarty.c:155
 msgid ""
 "Some of the items were filled incorrectly. Please, check the form and "
 "correct the errors."
 msgstr ""
 
-#: smarty.c:86
-msgid "Nice to see you."
+#: smarty.c:8 smarty.c:44 smarty.c:80 smarty.c:119 smarty.c:158
+msgid "Save"
 msgstr ""
 
-#: smarty.c:89
+#: smarty.c:11 smarty.c:47 smarty.c:83 smarty.c:122 smarty.c:161
+msgid "Go to home page"
+msgstr ""
+
+#: smarty.c:14 smarty.c:50 smarty.c:86 smarty.c:125 smarty.c:164
 msgid ""
-"This HTTP request is handled by the MainController and the index() action."
+"Read, hear, and study the ATK14 Book. Grow your skills. Earn some money. "
+"Enjoy your free time."
 msgstr ""
 
-#: smarty.c:92
-msgid "This is app/views/main/index.tpl template."
-msgstr ""
-
-#: smarty.c:95
-msgid "Where to go?"
-msgstr ""
-
-#: smarty.c:98
-msgid "visit the Creatures show"
-msgstr ""
-
-#: smarty.c:101
-msgid "check out 404 error page"
-msgstr ""
-
-#: smarty.c:104
+#: smarty.c:17 smarty.c:53 smarty.c:89 smarty.c:128 smarty.c:167
 msgid ""
-"switch the language: <a href=\"%1\">english</a> or <a href=\"%2\">czech</a>"
+"This site runs on <a href=\"http://www.atk14.net/\">ATK14 Framework</a>, for "
+"now and ever after"
 msgstr ""
+
+#: smarty.c:20 smarty.c:56 smarty.c:92 smarty.c:131 smarty.c:170
+msgid "required"
+msgstr ""
+
+#: smarty.c:23 smarty.c:59 smarty.c:95 smarty.c:134 smarty.c:173
+msgid "Example:"
+msgstr ""
+
+#: smarty.c:26 smarty.c:62 smarty.c:98 smarty.c:137 smarty.c:176
+msgid "Error 404: Page not found"
+msgstr ""
+
+#: smarty.c:29 smarty.c:65 smarty.c:101 smarty.c:140 smarty.c:179
+msgid "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
+msgstr ""
+
+#: smarty.c:32 smarty.c:68 smarty.c:104 smarty.c:143 smarty.c:182
+msgid "Go to the homepage"
+msgstr ""
+
+#: smarty.c:35 smarty.c:71 smarty.c:110 smarty.c:149 smarty.c:188
+msgid "Příručka pro psaní textu ve značkovacím jazyce Markdown"
+msgstr "Guide to writing text in the Markdown markup language"
+
+#: smarty.c:107 smarty.c:146 smarty.c:185
+msgid "Kdo používá ATK14?"
+msgstr "Who uses ATK14?"

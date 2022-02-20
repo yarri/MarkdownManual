@@ -75,7 +75,7 @@
 					<a class="nav-link" href="http://www.atk14.net/">ATK14 Framework</a>
 				</li>
 				<li class="nav-link" class="nav-item">
-					<a href="http://www.atk14sites.net/">Kdo používá ATK14?</a>
+					<a href="http://www.atk14sites.net/">{t}Kdo používá ATK14?{/t}</a>
 				</li>
 			</ul>
 		</div>
