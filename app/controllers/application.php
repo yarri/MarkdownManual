@@ -11,7 +11,7 @@ class ApplicationController extends Atk14Controller{
 	}
 
 	function error404(){
-		$this->page_title = $this->breadcrumbs[] = "Page not found";
+		$this->page_title = $this->breadcrumbs[] = _("Page not found");
 		$this->response->setStatusCode(404);
 		$this->template_name = "application/error404";
 	}
@@ -59,9 +59,32 @@ class ApplicationController extends Atk14Controller{
 	}
 
 	function _before_render(){
+		global $ATK14_GLOBAL;
+
 		if(!isset($this->tpl_data["breadcrumbs"]) && isset($this->breadcrumbs)){
 			$this->tpl_data["breadcrumbs"] = $this->breadcrumbs;
 		}
+
+		// data for language swith, see app/views/shared/_langswitch.tpl
+		$languages = array();
+		$current_language = null;
+		$params_homepage = array("namespace" => "", "controller" => "main", "action" => "index");
+		$params = ($this->request->get() && !preg_match('/^error/',$this->action)) ? $this->params->toArray() : $params_homepage;
+		foreach($ATK14_GLOBAL->getConfig("locale") as $l => $locale){
+			$params["lang"] = $l;
+			$item = array(
+				"lang" => $l,
+				"name" => isset($locale["name"]) ? $locale["name"] : $l,
+				"switch_url" => $this->_link_to($params)
+			);
+			if($this->lang==$l){
+				$current_language = $item;
+				continue;
+			}
+			$languages[] = $item;
+		}
+		$this->tpl_data["current_language"] = $current_language;
+		$this->tpl_data["supported_languages"] = $languages;
 	}
 
 	function _begin_database_transaction(){

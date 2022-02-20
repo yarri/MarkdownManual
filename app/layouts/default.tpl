@@ -74,9 +74,10 @@
 				<li class="nav-item">
 					<a class="nav-link" href="http://www.atk14.net/">ATK14 Framework</a>
 				</li>
-				<li class="nav-link" class="nav-item">
-					<a href="http://www.atk14sites.net/">{t}Kdo používá ATK14?{/t}</a>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.atk14sites.net/">{t}Kdo používá ATK14?{/t}</a>
 				</li>
+				{render partial="shared/langswitch_navbar"}
 			</ul>
 		</div>
   </div>
