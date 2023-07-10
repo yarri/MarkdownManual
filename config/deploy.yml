@@ -1,8 +1,10 @@
 production:
   server: "ntvage.opalstacked.com"
   user: "ntvage"
+  home_dir: "/home/{{user}}"
+  env: "PATH={{home_dir}}/bin:$PATH"
   url: http://markdown.plovarna.cz/
-  directory: "/home/{{user}}/apps/markdown_manual/"
+  directory: "{{home_dir}}/apps/markdown_manual/"
   deploy_repository: "{{user}}@{{server}}:repos/markdown_manual.git"
   before_deploy:
   - "@local composer update"
